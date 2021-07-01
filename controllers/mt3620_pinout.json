@@ -1,0 +1,1345 @@
+// EINT currently not supported
+// Counters currently not supported
+// I2S currently supported for M4 (low-level) applications only
+// If M4 0 used - GPIO85, GPIO86, GPIO87, GPIO88 not available
+// If M4 1 used - GPIO89, GPIO90, GPIO91, GPIO92 not available
+// GPIO 80 - present in mt3620.h, absent in the Mediatek MT3620 docs
+// Manifest values: Gpio, Adc, Pwm, Uart, I2cMaster, SpiMaster, ExternalInterrupt,
+[
+    {
+        "pin": 1,
+        "name": "GND",
+        "type": "P",
+        "description": "Ground"
+    },
+    {
+        "pin": 2,
+        "name": "AVDD_3V3_WF_A_PA",
+        "type": "PI",
+        "description": "3.3V power rail 5GHz Wi-Fi power amplifier"
+    },
+    {
+        "pin": 3,
+        "name": "AVDD_3V3_WF_A_PA",
+        "type": "PI",
+        "description": "3.3V power rail 5GHz Wi-Fi power amplifier"
+    },
+    {
+        "pin": 4,
+        "name": "NC"
+    },
+    {
+        "pin": 5,
+        "name": "NC"
+    },
+    {
+        "pin": 6,
+        "name": "AVDD_1V6_WF_TRX",
+        "type": "PI",
+        "description": "1.6V power rail for Wi-Fi transmit/receive"
+    },
+    {
+        "pin": 7,
+        "name": "AVDD_1V6_WF_AFE",
+        "type": "PI",
+        "description": "1.6V power rail for Wi-Fi analog front end"
+    },
+    {
+        "pin": 8,
+        "name": "NC"
+    },
+    {
+        "pin": 9,
+        "name": "AVDD_1V6_XO",
+        "type": "PI",
+        "description": "1.6V power rail for main crystal oscillator"
+    },
+    {
+        "pin": 10,
+        "name": "MAIN_XIN",
+        "type": "AI",
+        "description": "Main crystal oscillator input"
+    },
+    {
+        "pin": 11,
+        "name": "WF_ANTSEL0",
+        "type": "DO",
+        "description": "Wi-Fi antenna select for external DPDT switch"
+    },
+    {
+        "pin": 12,
+        "name": "WF_ANTSEL1",
+        "type": "DO",
+        "description": "Wi-Fi antenna select for external DPDT switch"
+    },
+    {
+        "pin": 13,
+        "name": "GPIO0",
+        "controller": "PWM-CONTROLLER-0",
+        "functions": [
+            "GPIO0",
+            "PWM0"
+        ],
+        "type": "DIO",
+        "description": "Interrupt-capable GPIO multiplexed with PWM output"
+    },
+    {
+        "pin": 14,
+        "name": "GPIO1",
+        "controller": "PWM-CONTROLLER-0",
+        "functions": [
+            "GPIO1",
+            "PWM1"
+        ],
+        "type": "DIO",
+        "description": "Interrupt-capable GPIO multiplexed with PWM output"
+    },
+    {
+        "pin": 15,
+        "name": "GPIO2",
+        "controller": "PWM-CONTROLLER-0",
+        "functions": [
+            "GPIO2",
+            "PWM2"
+        ],
+        "type": "DIO",
+        "description": "Interrupt-capable GPIO multiplexed with PWM output"
+    },
+    {
+        "pin": 16,
+        "name": "GPIO3",
+        "controller": "PWM-CONTROLLER-0",
+        "functions": [
+            "GPIO3",
+            "PWM3"
+        ],
+        "type": "DIO",
+        "description": "Interrupt-capable GPIO multiplexed with PWM output"
+    },
+    {
+        "pin": 17,
+        "name": "GPIO4",
+        "controller": "PWM-CONTROLLER-1",
+        "functions": [
+            "GPIO4",
+            "PWM4"
+        ],
+        "type": "DIO",
+        "description": "Interrupt-capable GPIO multiplexed with PWM output"
+    },
+    {
+        "pin": 18,
+        "name": "GPIO5",
+        "controller": "PWM-CONTROLLER-1",
+        "functions": [
+            "GPIO5",
+            "PWM5"
+        ],
+        "type": "DIO",
+        "description": "Interrupt-capable GPIO multiplexed with PWM output"
+    },
+    {
+        "pin": 19,
+        "name": "GPIO6",
+        "controller": "PWM-CONTROLLER-1",
+        "functions": [
+            "GPIO6",
+            "PWM6"
+        ],
+        "type": "DIO",
+        "description": "Interrupt-capable GPIO multiplexed with PWM output"
+    },
+    {
+        "pin": 20,
+        "name": "GPIO07",
+        "controller": "PWM-CONTROLLER-1",
+        "functions": [
+            "GPIO07",
+            "PWM7"
+        ],
+        "type": "DIO",
+        "description": "Interrupt-capable GPIO multiplexed with PWM output"
+    },
+    {
+        "pin": 21,
+        "name": "GPIO08",
+        "controller": "PWM-CONTROLLER-2",
+        "functions": [
+            "GPIO08",
+            "PWM8"
+        ],
+        "type": "DIO",
+        "description": "Interrupt-capable GPIO multiplexed with PWM output"
+    },
+    {
+        "pin": 22,
+        "name": "GPIO09",
+        "controller": "PWM-CONTROLLER-2",
+        "functions": [
+            "GPIO09",
+            "PWM9"
+        ],
+        "type": "DIO",
+        "description": "Interrupt-capable GPIO multiplexed with PWM output"
+    },
+    {
+        "pin": 23,
+        "name": "DVDD_1V15",
+        "type": "PI",
+        "description": "1.15V power rail"
+    },
+    {
+        "pin": 24,
+        "name": "DVDD_3V3",
+        "type": "PI",
+        "description": "3.3V power rail"
+    },
+    {
+        "pin": 25,
+        "name": "GPIO10",
+        "controller": "PWM-CONTROLLER-2",
+        "functions": [
+            "GPIO10",
+            "PWM10"
+        ],
+        "type": "DIO",
+        "description": "Interrupt-capable GPIO multiplexed with PWM output"
+    },
+    {
+        "pin": 26,
+        "name": "GPIO11",
+        "controller": "PWM-CONTROLLER-2",
+        "functions": [
+            "GPIO11",
+            "PWM11"
+        ],
+        "type": "DIO",
+        "description": "Interrupt-capable GPIO multiplexed with PWM output"
+    },
+    {
+        "pin": 27,
+        "name": "GPIO12",
+        "functions": [
+            "GPIO12"
+        ],
+        "type": "DIO",
+        "description": "Interrupt-capable GPIO"
+    },
+    {
+        "pin": 28,
+        "name": "GPIO13",
+        "functions": [
+            "GPIO13"
+        ],
+        "type": "DIO",
+        "description": "Interrupt-capable GPIO"
+    },
+    {
+        "pin": 29,
+        "name": "GPIO14",
+        "functions": [
+            "GPIO14"
+        ],
+        "type": "DIO",
+        "description": "Interrupt-capable GPIO"
+    },
+    {
+        "pin": 30,
+        "name": "GPIO15",
+        "functions": [
+            "GPIO15"
+        ],
+        "type": "DIO",
+        "description": "Interrupt-capable GPIO"
+    },
+    {
+        "pin": 31,
+        "name": "GPIO16",
+        "functions": [
+            "GPIO16"
+        ],
+        "type": "DIO",
+        "description": "Interrupt-capable GPIO"
+    },
+    {
+        "pin": 32,
+        "name": "GPIO17",
+        "functions": [
+            "GPIO17"
+        ],
+        "type": "DIO",
+        "description": "Interrupt-capable GPIO"
+    },
+    {
+        "pin": 33,
+        "name": "GPIO18",
+        "functions": [
+            "GPIO18"
+        ],
+        "type": "DIO",
+        "description": "Interrupt-capable GPIO"
+    },
+    {
+        "pin": 34,
+        "name": "GPIO19",
+        "functions": [
+            "GPIO19"
+        ],
+        "type": "DIO",
+        "description": "Interrupt-capable GPIO"
+    },
+    {
+        "pin": 35,
+        "name": "GPIO20",
+        "functions": [
+            "GPIO20"
+        ],
+        "type": "DIO",
+        "description": "Interrupt-capable GPIO"
+    },
+    {
+        "pin": 36,
+        "name": "GPIO21",
+        "functions": [
+            "GPIO21"
+        ],
+        "type": "DIO",
+        "description": "Interrupt-capable GPIO"
+    },
+    {
+        "pin": 37,
+        "name": "GPIO22",
+        "functions": [
+            "GPIO22"
+        ],
+        "type": "DIO",
+        "description": "Interrupt-capable GPIO"
+    },
+    {
+        "pin": 38,
+        "name": "GPIO23",
+        "functions": [
+            "GPIO23"
+        ],
+        "type": "DIO",
+        "description": "Interrupt-capable GPIO"
+    },
+    {
+        "pin": 39,
+        "name": "GPIO26",
+        "functions": [
+            "GPIO26",
+            "SCLK0",
+            "TXD0"
+        ],
+        "type": "DIO",
+        "controller": "ISU0",
+        "description": "GPIO multiplexed with ISU 0 functions"
+    },
+    {
+        "pin": 40,
+        "name": "GPIO27",
+        "functions": [
+            "GPIO27",
+            "MOSI0",
+            "RTS0",
+            "SCL0"
+        ],
+        "type": "DIO",
+        "controller": "ISU0",
+        "description": "GPIO multiplexed with ISU 0 functions"
+    },
+    {
+        "pin": 41,
+        "name": "GND",
+        "type": "P",
+        "description": "Ground"
+    },
+    {
+        "pin": 42,
+        "name": "GPIO28",
+        "functions": [
+            "GPIO28",
+            "MISO0",
+            "RXD0",
+            "SDA0"
+        ],
+        "type": "DIO",
+        "controller": "ISU0",
+        "description": "GPIO multiplexed with ISU 0 functions"
+    },
+    {
+        "pin": 43,
+        "name": "GPIO29",
+        "functions": [
+            "GPIO29",
+            "CSA0",
+            "CTS0"
+        ],
+        "type": "DIO",
+        "controller": "ISU0",
+        "description": "GPIO multiplexed with ISU 0 functions"
+    },
+    {
+        "pin": 44,
+        "name": "DVDD_1V15",
+        "type": "PI",
+        "description": "1.15V power rail"
+    },
+    {
+        "pin": 45,
+        "name": "GPIO30",
+        "functions": [
+            "GPIO30",
+            "CSB0"
+        ],
+        "type": "DIO",
+        "controller": "ISU0",
+        "description": "GPIO multiplexed with ISU 0 functions"
+    },
+    {
+        "pin": 46,
+        "name": "GPIO31",
+        "functions": [
+            "GPIO31",
+            "SCLK1",
+            "TXD1"
+        ],
+        "type": "DIO",
+        "controller": "ISU1",
+        "description": "GPIO multiplexed with ISU 1 functions"
+    },
+    {
+        "pin": 47,
+        "name": "GPIO32",
+        "functions": [
+            "GPIO32",
+            "MOSI1",
+            "RTS1",
+            "SCL1"
+        ],
+        "type": "DIO",
+        "controller": "ISU1",
+        "description": "GPIO multiplexed with ISU 1 functions"
+    },
+    {
+        "pin": 48,
+        "name": "GPIO33",
+        "functions": [
+            "GPIO33",
+            "MISO1",
+            "RXD1",
+            "SDA1"
+        ],
+        "type": "DIO",
+        "controller": "ISU1",
+        "description": "GPIO multiplexed with ISU 1 functions"
+    },
+    {
+        "pin": 49,
+        "name": "GPIO34",
+        "functions": [
+            "GPIO34",
+            "CSA1",
+            "CTS1"
+        ],
+        "type": "DIO",
+        "controller": "ISU1",
+        "description": "GPIO multiplexed with ISU 1 functions"
+    },
+    {
+        "pin": 50,
+        "name": "GPIO35",
+        "functions": [
+            "GPIO35",
+            "CSB1"
+        ],
+        "type": "DIO",
+        "controller": "ISU1",
+        "description": "GPIO multiplexed with ISU 1 functions"
+    },
+    {
+        "pin": 51,
+        "name": "GPIO36",
+        "functions": [
+            "GPIO36",
+            "SCLK2",
+            "TXD2"
+        ],
+        "type": "DIO",
+        "controller": "ISU2",
+        "description": "GPIO multiplexed with ISU 2 functions"
+    },
+    {
+        "pin": 52,
+        "name": "GPIO37",
+        "functions": [
+            "GPIO37",
+            "MOSI2",
+            "RTS2",
+            "SCL2"
+        ],
+        "type": "DIO",
+        "controller": "ISU2",
+        "description": "GPIO multiplexed with ISU 2 functions"
+    },
+    {
+        "pin": 53,
+        "name": "GPIO38",
+        "functions": [
+            "GPIO38",
+            "MISO2",
+            "RXD2",
+            "SDA2"
+        ],
+        "type": "DIO",
+        "controller": "ISU2",
+        "description": "GPIO multiplexed with ISU 2 functions"
+    },
+    {
+        "pin": 54,
+        "name": "GPIO39",
+        "functions": [
+            "GPIO39",
+            "CSA2",
+            "CTS2"
+        ],
+        "type": "DIO",
+        "controller": "ISU2",
+        "description": "GPIO multiplexed with ISU 2 functions"
+    },
+    {
+        "pin": 55,
+        "name": "GPIO40",
+        "functions": [
+            "GPIO40",
+            "CSB2"
+        ],
+        "type": "DIO",
+        "controller": "ISU2",
+        "description": "GPIO multiplexed with ISU 2 functions"
+    },
+    {
+        "pin": 56,
+        "name": "DVDD_3V3",
+        "type": "PI",
+        "description": "3.3V power rail"
+    },
+    {
+        "pin": 57,
+        "name": "DVDD_1V15",
+        "type": "PI",
+        "description": "1.15V power rail"
+    },
+    {
+        "pin": 58,
+        "name": "GPIO41",
+        "controller": "ADC-CONTROLLER-0",
+        "functions": [
+            "GPIO41",
+            "ADC0"
+        ],
+        "type": "DIO",
+        "description": "GPIO multiplexed with ADC input"
+    },
+    {
+        "pin": 59,
+        "name": "GPIO42",
+        "controller": "ADC-CONTROLLER-0",
+        "functions": [
+            "GPIO42",
+            "ADC1"
+        ],
+        "type": "DIO",
+        "description": "GPIO multiplexed with ADC input"
+    },
+    {
+        "pin": 60,
+        "name": "GPIO43",
+        "controller": "ADC-CONTROLLER-0",
+        "functions": [
+            "GPIO43",
+            "ADC2"
+        ],
+        "type": "DIO",
+        "description": "GPIO multiplexed with ADC input"
+    },
+    {
+        "pin": 61,
+        "name": "GPIO44",
+        "controller": "ADC-CONTROLLER-0",
+        "functions": [
+            "GPIO44",
+            "ADC3"
+        ],
+        "type": "DIO",
+        "description": "GPIO multiplexed with ADC input"
+    },
+    {
+        "pin": 62,
+        "name": "GPIO45",
+        "controller": "ADC-CONTROLLER-0",
+        "functions": [
+            "GPIO45",
+            "ADC4"
+        ],
+        "type": "DIO",
+        "description": "GPIO multiplexed with ADC input"
+    },
+    {
+        "pin": 63,
+        "name": "GPIO46",
+        "controller": "ADC-CONTROLLER-0",
+        "functions": [
+            "GPIO46",
+            "ADC5"
+        ],
+        "type": "DIO",
+        "description": "GPIO multiplexed with ADC input"
+    },
+    {
+        "pin": 64,
+        "name": "GPIO47",
+        "controller": "ADC-CONTROLLER-0",
+        "functions": [
+            "GPIO47",
+            "ADC6"
+        ],
+        "type": "DIO",
+        "description": "GPIO multiplexed with ADC input"
+    },
+    {
+        "pin": 65,
+        "name": "GPIO48",
+        "controller": "ADC-CONTROLLER-0",
+        "functions": [
+            "GPIO48",
+            "ADC7"
+        ],
+        "type": "DIO",
+        "description": "GPIO multiplexed with ADC input"
+    },
+    {
+        "pin": 66,
+        "name": "AVDD_2V5_ADC",
+        "type": "PI",
+        "description": "2.5V power rail for ADC"
+    },
+    {
+        "pin": 67,
+        "name": "VREF_ADC",
+        "type": "AI",
+        "description": "Reference voltage for ADC"
+    },
+    {
+        "pin": 68,
+        "name": "AVSS_2V5_ADC",
+        "type": "P",
+        "description": "Ground for ADC"
+    },
+    {
+        "pin": 69,
+        "name": "EXT_PMU_EN",
+        "type": "DO",
+        "description": "External power supply enable output"
+    },
+    {
+        "pin": 70,
+        "name": "WAKEUP",
+        "type": "DI",
+        "description": "External wakeup from deepest sleep mode"
+    },
+    {
+        "pin": 71,
+        "name": "AVDD_3V3_RTC",
+        "type": "PI",
+        "description": "3.3V power rail for real-time clock"
+    },
+    {
+        "pin": 72,
+        "name": "RTC_XIN",
+        "type": "AI",
+        "description": "Realtime clock crystal oscillator input"
+    },
+    {
+        "pin": 73,
+        "name": "RTC_XOUT",
+        "type": "AO",
+        "description": "Realtime clock crystal oscillator output"
+    },
+    {
+        "pin": 74,
+        "name": "AVDD_3V3_XPPLL",
+        "type": "PI",
+        "description": "3.3V power rail for internal phase-locked loop"
+    },
+    {
+        "pin": 75,
+        "name": "I2S_MCLK0_ALT",
+        "type": "AO",
+        "description": "Analog alternative to MCLK0"
+    },
+    {
+        "pin": 76,
+        "name": "I2S_MCLK1_ALT",
+        "type": "AO",
+        "description": "Analog alternative to MCLK1"
+    },
+    {
+        "pin": 77,
+        "name": "DVDD_1V15",
+        "type": "PI",
+        "description": "1.15V power rail"
+    },
+    {
+        "pin": 78,
+        "name": "DVDD_1V15",
+        "type": "PI",
+        "description": "1.15V power rail"
+    },
+    {
+        "pin": 79,
+        "name": "VOUT_2V5",
+        "type": "PO",
+        "description": "Output from internal 2.5V LDO"
+    },
+    {
+        "pin": 80,
+        "name": "AVDD_3V3",
+        "type": "PI",
+        "description": "3.3V power rail"
+    },
+    {
+        "pin": 81,
+        "name": "PMU_EN",
+        "type": "DI",
+        "description": "Internal PMU override"
+    },
+    {
+        "pin": 82,
+        "name": "RESERVED"
+    },
+    {
+        "pin": 83,
+        "name": "GND",
+        "type": "P",
+        "description": "Ground"
+    },
+    {
+        "pin": 84,
+        "name": "SENSE_1V15",
+        "type": "AI",
+        "description": "Sense input to stabilise the 1.15V power supply"
+    },
+    {
+        "pin": 85,
+        "name": "VOUT_1V15",
+        "type": "PO",
+        "description": "Output from internal 1.15V LDO"
+    },
+    {
+        "pin": 86,
+        "name": "AVDD_1V6_CLDO",
+        "type": "PI",
+        "description": "1.6V power rail for the internal 1.15V core LDO"
+    },
+    {
+        "pin": 87,
+        "name": "PMU_CAP",
+        "type": "A",
+        "description": "Connect a capacitor between this pin and AVDD_3V3_BUCK to maintain PMU stability"
+    },
+    {
+        "pin": 88,
+        "name": "AVDD_3V3_BUCK",
+        "type": "PI",
+        "description": "3.3V power rail for internal 1.6V buck DC-DC converter"
+    },
+    {
+        "pin": 89,
+        "name": "AVDD_3V3_BUCK",
+        "type": "PI",
+        "description": "3.3V power rail for internal 1.6V buck DC-DC converter"
+    },
+    {
+        "pin": 90,
+        "name": "VOUT_1V6",
+        "type": "PO",
+        "description": "Output from internal 1.6V buck converter"
+    },
+    {
+        "pin": 91,
+        "name": "VOUT_1V6",
+        "type": "PO",
+        "description": "Output from internal 1.6V buck converter"
+    },
+    {
+        "pin": 92,
+        "name": "AVSS_3V3_BUCK",
+        "type": "P",
+        "description": "Ground for internal 1.6V buck converter"
+    },
+    {
+        "pin": 93,
+        "name": "AVSS_3V3_BUCK",
+        "type": "P",
+        "description": "Ground for internal 1.6V buck converter"
+    },
+    {
+        "pin": 94,
+        "name": "DEBUG_RXD",
+        "type": "DI",
+        "description": "Reserved for Azure Sphere debug"
+    },
+    {
+        "pin": 95,
+        "name": "DEBUG_TXD",
+        "type": "DO",
+        "description": "Reserved for Azure Sphere debug"
+    },
+    {
+        "pin": 96,
+        "name": "DEBUG_RTS",
+        "type": "DO",
+        "description": "Reserved for Azure Sphere debug"
+    },
+    {
+        "pin": 97,
+        "name": "DEBUG_CTS",
+        "type": "DI",
+        "description": "Reserved for Azure Sphere debug"
+    },
+    {
+        "pin": 98,
+        "name": "SWD_DIO",
+        "type": "DI",
+        "description": "ARM SWD for Cortex-M4F debug"
+    },
+    {
+        "pin": 99,
+        "name": "SWD_CLK",
+        "type": "DIO",
+        "description": "ARM SWD for Cortex-M4F debug"
+    },
+    {
+        "pin": 100,
+        "name": "SWO",
+        "type": "DI",
+        "description": "ARM SWD for Cortex-M4F debug"
+    },
+    {
+        "pin": 101,
+        "name": "GPIO56",
+        "controller": "I2S0",
+        "functions": [
+            "GPIO56",
+            "TX0"
+        ],
+        "type": "DIO",
+        "description": "GPIO multiplexed with I2S 0"
+    },
+    {
+        "pin": 102,
+        "name": "GPIO57",
+        "controller": "I2S0",
+        "functions": [
+            "GPIO57",
+            "MCLK0"
+        ],
+        "type": "DIO",
+        "description": "GPIO multiplexed with I2S 0"
+    },
+    {
+        "pin": 103,
+        "name": "GPIO58",
+        "controller": "I2S0",
+        "functions": [
+            "GPIO58",
+            "FS0"
+        ],
+        "type": "DIO",
+        "description": "GPIO multiplexed with I2S 0"
+    },
+    {
+        "pin": 104,
+        "name": "GPIO59",
+        "controller": "I2S0",
+        "functions": [
+            "GPIO59",
+            "RX0"
+        ],
+        "type": "DIO",
+        "description": "GPIO multiplexed with I2S 0"
+    },
+    {
+        "pin": 105,
+        "name": "GPIO60",
+        "controller": "I2S0",
+        "functions": [
+            "GPIO60",
+            "BCLK0"
+        ],
+        "type": "DIO",
+        "description": "GPIO multiplexed with I2S 0"
+    },
+    {
+        "pin": 106,
+        "name": "DVDD_1V15",
+        "type": "PI",
+        "description": "1.15V power rail"
+    },
+    {
+        "pin": 107,
+        "name": "DVDD_3V3",
+        "type": "PI",
+        "description": "3.3V power rail"
+    },
+    {
+        "pin": 108,
+        "name": "GPIO61",
+        "controller": "I2S1",
+        "functions": [
+            "GPIO61",
+            "TX1"
+        ],
+        "type": "DIO",
+        "description": "GPIO multiplexed with I2S 1"
+    },
+    {
+        "pin": 109,
+        "name": "GPIO62",
+        "controller": "I2S1",
+        "functions": [
+            "GPIO62",
+            "MCLK1"
+        ],
+        "type": "DIO",
+        "description": "GPIO multiplexed with I2S 1"
+    },
+    {
+        "pin": 110,
+        "name": "GPIO63",
+        "controller": "I2S1",
+        "functions": [
+            "GPIO63",
+            "FS1"
+        ],
+        "type": "DIO",
+        "description": "GPIO multiplexed with I2S 1"
+    },
+    {
+        "pin": 111,
+        "name": "GPIO64",
+        "controller": "I2S1",
+        "functions": [
+            "GPIO64",
+            "RX1"
+        ],
+        "type": "DIO",
+        "description": "GPIO multiplexed with I2S 1"
+    },
+    {
+        "pin": 112,
+        "name": "GPIO65",
+        "controller": "I2S1",
+        "functions": [
+            "GPIO65",
+            "BCLK1"
+        ],
+        "type": "DIO",
+        "description": "GPIO multiplexed with I2S 1"
+    },
+    {
+        "pin": 113,
+        "name": "GPIO66",
+        "functions": [
+            "GPIO66",
+            "SCLK3",
+            "TXD3"
+        ],
+        "type": "DIO",
+        "controller": "ISU3",
+        "description": "GPIO multiplexed with ISU 3 functions"
+    },
+    {
+        "pin": 114,
+        "name": "GPIO67",
+        "functions": [
+            "GPIO67",
+            "MOSI3",
+            "RTS3",
+            "SCL3"
+        ],
+        "type": "DIO",
+        "controller": "ISU3",
+        "description": "GPIO multiplexed with ISU 3 functions"
+    },
+    {
+        "pin": 115,
+        "name": "GPIO68",
+        "functions": [
+            "GPIO68",
+            "MISO3",
+            "RXD3",
+            "SDA3"
+        ],
+        "type": "DIO",
+        "controller": "ISU3",
+        "description": "GPIO multiplexed with ISU 3 functions"
+    },
+    {
+        "pin": 116,
+        "name": "GPIO69",
+        "functions": [
+            "GPIO69",
+            "CSA3",
+            "CTS3"
+        ],
+        "type": "DIO",
+        "controller": "ISU3",
+        "description": "GPIO multiplexed with ISU 3 functions"
+    },
+    {
+        "pin": 117,
+        "name": "GPIO70",
+        "functions": [
+            "GPIO70",
+            "CSB3"
+        ],
+        "type": "DIO",
+        "controller": "ISU3",
+        "description": "GPIO multiplexed with ISU 3 functions"
+    },
+    {
+        "pin": 118,
+        "name": "DVDD_3V3",
+        "type": "PI",
+        "description": "3.3V power rail"
+    },
+    {
+        "pin": 119,
+        "name": "GPIO71",
+        "functions": [
+            "GPIO71",
+            "SCLK4",
+            "TXD4"
+        ],
+        "type": "DIO",
+        "controller": "ISU4",
+        "description": "GPIO multiplexed with ISU 4 functions"
+    },
+    {
+        "pin": 120,
+        "name": "GPIO72",
+        "functions": [
+            "GPIO72",
+            "MOSI4",
+            "RTS4",
+            "SCL4"
+        ],
+        "type": "DIO",
+        "controller": "ISU4",
+        "description": "GPIO multiplexed with ISU 4 functions"
+    },
+    {
+        "pin": 121,
+        "name": "DVDD_1V15",
+        "type": "PI",
+        "description": "1.15V power rail"
+    },
+    {
+        "pin": 122,
+        "name": "GPIO73",
+        "functions": [
+            "GPIO73",
+            "MISO4",
+            "RXD4",
+            "SDA4"
+        ],
+        "type": "DIO",
+        "controller": "ISU4",
+        "description": "GPIO multiplexed with ISU 4 functions"
+    },
+    {
+        "pin": 123,
+        "name": "GPIO74",
+        "functions": [
+            "GPIO74",
+            "CSA4",
+            "CTS4"
+        ],
+        "type": "DIO",
+        "controller": "ISU4",
+        "description": "GPIO multiplexed with ISU 4 functions"
+    },
+    {
+        "pin": 124,
+        "name": "GPIO75",
+        "functions": [
+            "GPIO75",
+            "CSB4"
+        ],
+        "type": "DIO",
+        "controller": "ISU4",
+        "description": "GPIO multiplexed with ISU 4 functions"
+    },
+    {
+        "pin": 125,
+        "name": "CSB4",
+        "type": "DI",
+        "description": "System reset, active low"
+    },
+    {
+        "pin": 126,
+        "name": "DVDD_1V15",
+        "type": "DI",
+        "description": "1.15V power rail"
+    },
+    {
+        "pin": 127,
+        "name": "SERVICE_TXD",
+        "type": "DO",
+        "description": "Azure Sphere service port"
+    },
+    {
+        "pin": 128,
+        "name": "SERVICE_RTS",
+        "type": "DO",
+        "description": "Azure Sphere service port"
+    },
+    {
+        "pin": 129,
+        "name": "SERVICE_RXD",
+        "type": "DI",
+        "description": "Azure Sphere service port"
+    },
+    {
+        "pin": 130,
+        "name": "SERVICE_CTS",
+        "type": "DI",
+        "description": "Azure Sphere service port"
+    },
+    {
+        "pin": 131,
+        "name": "RESERVED"
+    },
+    {
+        "pin": 132,
+        "name": "DVDD_1V15",
+        "type": "PI",
+        "description": "1.15V power rail"
+    },
+    {
+        "pin": 133,
+        "name": "DVDD_3V3",
+        "type": "PI",
+        "description": "3.3V power rail"
+    },
+    {
+        "pin": 134,
+        "name": "RECOVERY_RXD",
+        "type": "DI",
+        "description": "Azure Sphere recovery port"
+    },
+    {
+        "pin": 135,
+        "name": "RECOVERY_TXD",
+        "type": "DO",
+        "description": "Azure Sphere recovery port"
+    },
+    {
+        "pin": 136,
+        "name": "RECOVERY_RTS",
+        "type": "DO",
+        "description": "Azure Sphere recovery port"
+    },
+    {
+        "pin": 137,
+        "name": "RECOVERY_CTS",
+        "type": "DI",
+        "description": "Azure Sphere recovery port"
+    },
+    {
+        "pin": 138,
+        "name": "IO0_GPIO85",
+        "functions": [
+            "IO0_GPIO85",
+            "IO0_RXD"
+        ],
+        "type": "DI",
+        "description": "Dedicated GPIO multiplexed with UART for I/O M4 0"
+    },
+    {
+        "pin": 139,
+        "name": "IO0_GPIO86",
+        "functions": [
+            "IO0_GPIO86",
+            "IO0_TXD"
+        ],
+        "type": "DO",
+        "description": "Dedicated GPIO multiplexed with UART for I/O M4 0"
+    },
+    {
+        "pin": 140,
+        "name": "IO0_GPIO87",
+        "functions": [
+            "IO0_GPIO87",
+            "IO0_RTS"
+        ],
+        "type": "DO",
+        "description": "Dedicated GPIO multiplexed with UART for I/O M4 0"
+    },
+    {
+        "pin": 141,
+        "name": "IO0_GPIO88",
+        "functions": [
+            "IO0_GPIO88",
+            "IO0_CTS"
+        ],
+        "type": "DI",
+        "description": "Dedicated GPIO multiplexed with UART for I/O M4 0"
+    },
+    {
+        "pin": 142,
+        "name": "IO1_GPIO89",
+        "functions": [
+            "IO1_GPIO89",
+            "IO1_RXD"
+        ],
+        "type": "DI",
+        "description": "Dedicated GPIO multiplexed with UART for I/O M4 1"
+    },
+    {
+        "pin": 143,
+        "name": "IO1_GPIO90",
+        "functions": [
+            "IO1_GPIO90",
+            "IO1_TXD"
+        ],
+        "type": "DO",
+        "description": "Dedicated GPIO multiplexed with UART for I/O M4 1"
+    },
+    {
+        "pin": 144,
+        "name": "DVDD_3V3",
+        "type": "PI",
+        "description": "3.3V power rail"
+    },
+    {
+        "pin": 145,
+        "name": "IO1_GPIO91",
+        "functions": [
+            "IO1_GPIO91",
+            "IO1_RTS"
+        ],
+        "type": "DO",
+        "description": "Dedicated GPIO multiplexed with UART for I/O M4 1"
+    },
+    {
+        "pin": 146,
+        "name": "IO1_GPIO92",
+        "functions": [
+            "IO1_GPIO92",
+            "IO1_CTS"
+        ],
+        "type": "DO",
+        "description": "Dedicated GPIO multiplexed with UART for I/O M4 1"
+    },
+    {
+        "pin": 147,
+        "name": "RESERVED"
+    },
+    {
+        "pin": 148,
+        "name": "TEST",
+        "type": "DI",
+        "description": "Must be pulled low for normal operation"
+    },
+    {
+        "pin": 149,
+        "name": "WF_G_RF_AUXIN",
+        "type": "RF",
+        "description": "2.4GHz Wi-Fi receive diversity port"
+    },
+    {
+        "pin": 150,
+        "name": "NC"
+    },
+    {
+        "pin": 151,
+        "name": "AVDD_3V3_WF_G_PA",
+        "type": "PI",
+        "description": "3.3V power rail for 2.4GHz Wi-Fi power amplifier"
+    },
+    {
+        "pin": 152,
+        "name": "NC"
+    },
+    {
+        "pin": 153,
+        "name": "WF_G_RF_ION",
+        "type": "RF",
+        "description": "2.4GHz Wi-Fi antenna port (differential)"
+    },
+    {
+        "pin": 154,
+        "name": "WF_G_RF_ION",
+        "type": "RF",
+        "description": "2.4GHz Wi-Fi antenna port (differential)"
+    },
+    {
+        "pin": 155,
+        "name": "WF_G_RF_IOP",
+        "type": "RF",
+        "description": "2.4GHz Wi-Fi antenna port (differential)"
+    },
+    {
+        "pin": 156,
+        "name": "WF_G_RF_IOP",
+        "type": "RF",
+        "description": "2.4GHz Wi-Fi antenna port (differential)"
+    },
+    {
+        "pin": 157,
+        "name": "NC"
+    },
+    {
+        "pin": 158,
+        "name": "AVDD_3V3_WF_G_TX",
+        "type": "PI",
+        "description": "3.3V power rail for 2.4GHz Wi-Fi power transmit"
+    },
+    {
+        "pin": 159,
+        "name": "WF_A_RF_AUXIN",
+        "type": "RF",
+        "description": "5GHz Wi-Fi receive diversity port"
+    },
+    {
+        "pin": 160,
+        "name": "AVDD_3V3_WF_A_TX",
+        "type": "PI",
+        "description": "3.3V power rail for 5GHz Wi-Fi power transmit"
+    },
+    {
+        "pin": 161,
+        "name": "NC"
+    },
+    {
+        "pin": 162,
+        "name": "WF_A_RFIO",
+        "type": "RF",
+        "description": "5GHz Wi-Fi antenna port (unbalanced)"
+    },
+    {
+        "pin": 163,
+        "name": "WF_A_RFIO",
+        "type": "RF",
+        "description": "5GHz Wi-Fi antenna port (unbalanced)"
+    },
+    {
+        "pin": 164,
+        "name": "GND",
+        "description": "Ground"
+    }
+]
