@@ -23,13 +23,13 @@
     },
     "PWM-CONTROLLER-2": {
         "gpio": [
-            [8, "MT3620_GPIO4"],
-            [9, "MT3620_GPIO5"],
-            [10, "MT3620_GPIO6"],
-            [11, "MT3620_GPIO7"]
+            [8, "MT3620_GPIO8"],
+            [9, "MT3620_GPIO9"],
+            [10, "MT3620_GPIO10"],
+            [11, "MT3620_GPIO11"]
         ],
         "pwm": [
-            [1, "MT3620_PWM_CONTROLLER1"]
+            [2, "MT3620_PWM_CONTROLLER2"]
         ]
     },
     "ISU0": {
