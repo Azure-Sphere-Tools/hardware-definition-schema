@@ -76,7 +76,7 @@
             "type": "string"
           },
           "MainCoreHeaderValue": {
-            "type": "string",,
+            "type": "string",
             "pattern": "[(][-0-9]+[)]"
           }
         },
