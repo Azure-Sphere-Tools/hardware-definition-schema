@@ -1,90 +1,117 @@
 {
-  "$id": "https://raw.githubusercontent.com/Azure-Sphere-Tools/hardware-definition-schema/master/hardware-definition-schema.json",
-  "$schema": "http://json-schema.org/draft-04/schema#",
-  "title": "HardwareDefinition",
-  "type": "object",
-  "properties": {
-    "Metadata": {
-      "type": "object",
-      "properties": {
-        "Type": {
-          "type": "string"
-        },
-        "Version": {
-          "type": "number"
-        }
-      },
-      "required": [
-        "Type",
-        "Version"
-      ]
-    },
-    "Description": {
-      "type": "object",
-      "properties": {
-        "Name": {
-          "type": "string",
-          "description": "Name of the Hardware Definition"
-        },
-        "MainCoreHeaderFileTopContent": {
-          "type": "array",
-          "description": "Contents to add to top of generated c header file"
-        }
-      }
-    },
-    "Imports": {
-      "type": "array",
-      "description": "Hardware definition files to import",
-      "items": {
-        "type": "object",
-        "properties": {
-          "Path": {
-            "type": "string",
-            "description": "Path to the hardware definition file to import"
-          }
-        },
-        "required": [
-          "Path"
-        ]
-      }
-    },
-    "Peripherals": {
-      "type": "array",
-      "description": "Mappings to the hardware's underlying pins/peripherals",
-      "items": {
-        "type": "object",
-        "properties": {
-          "Name": {
-            "type": "string",
-            "description": "Name of the mapping, must be unique across all imported hardware definitions"
-          },
-          "Type": {
-            "enum": [
-              "Gpio",
-              "Pwm",
-              "Adc",
-              "I2cMaster",
-              "SpiMaster",
-              "Uart",
-              "int"
+    "$id": "https://raw.githubusercontent.com/Azure-Sphere-Tools/hardware-definition-schema/master/hardware-definition-schema.json",
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "HardwareDefinition",
+    "type": "object",
+    "properties": {
+        "Metadata": {
+            "type": "object",
+            "properties": {
+                "Type": {
+                    "type": "string"
+                },
+                "Version": {
+                    "type": "number"
+                }
+            },
+            "required": [
+                "Type",
+                "Version"
             ]
-          },
-          "Mapping": {
-            "type": "string"
-          },
-          "Comment": {
-            "type": "string"
-          },
-          "MainCoreHeaderValue": {
-            "type": "string",
-            "pattern": "[(][-0-9]+[)]"
-          }
         },
-        "required": [
-          "Name",
-          "Type"
-        ]
-      }
+        "Description": {
+            "type": "object",
+            "properties": {
+                "Name": {
+                    "type": "string",
+                    "description": "Name of the Hardware Definition"
+                },
+                "MainCoreHeaderFileTopContent": {
+                    "type": "array",
+                    "description": "Contents to add to top of generated c header file"
+                }
+            }
+        },
+        "Imports": {
+            "type": "array",
+            "description": "Hardware definition files to import",
+            "items": {
+                "type": "object",
+                "properties": {
+                    "Path": {
+                        "type": "string",
+                        "description": "Path to the hardware definition file to import"
+                    }
+                },
+                "required": [
+                    "Path"
+                ]
+            }
+        },
+        "Peripherals": {
+            "type": "array",
+            "description": "Mappings to the hardware's underlying pins/peripherals",
+            "items": {
+                "allOf": [
+                    {
+                        "type": "object",
+                        "properties": {
+                            "Name": {
+                                "type": "string",
+                                "description": "Name of the mapping, must be unique across all imported hardware definitions"
+                            },
+                            "Type": {
+                                "enum": [
+                                    "Gpio",
+                                    "Pwm",
+                                    "Adc",
+                                    "I2cMaster",
+                                    "SpiMaster",
+                                    "Uart",
+                                    "int"
+                                ]
+                            },
+                            "Comment": {
+                                "type": "string"
+                            }
+                        }
+                    },
+                    {
+                        "oneOf": [
+                            {
+                                "type": "object",
+                                "properties": {
+                                    "Mapping": {
+                                        "type": "string"
+                                    }
+                                },
+                                "required": [
+                                    "Mapping"
+                                ]
+                            },
+                            {
+                                "type": "object",
+                                "properties": {
+                                    "AppManifestValue": {
+                                        "type": [
+                                            "integer",
+                                            "string"
+                                        ]
+                                    },
+                                    "MainCoreHeaderValue": {
+                                        "type": "string",
+                                        "pattern": "[(][-0-9]+[)]"
+                                    }
+                                },
+                                "required": [
+                                    "AppManifestValue",
+                                    "MainCoreHeaderValue"
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            }
+        }
     }
-  }
 }
